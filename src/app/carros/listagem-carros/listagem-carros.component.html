@@ -1,0 +1,14 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Ano</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let carro of carros">
+            <td>{{ carro.nome }}</td>
+            <td>{{ carro.ano }}</td>
+        </tr>
+    </tbody>
+</table>

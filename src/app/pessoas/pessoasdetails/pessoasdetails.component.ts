@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Pessoa } from '../../pessoa.model';
 
 @Component({
   selector: 'app-pessoasdetails',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./pessoasdetails.component.scss']
 })
 export class PessoasdetailsComponent {
+pessoa: any;
 
 }
