@@ -1,3 +1,7 @@
-<h2>{{ carro.nome }}</h2>
-<p>{{ carro.ano }}</p>
+Nome:
+<input type="text" [(ngModel)]="carro.nome" />
 
+Ano:
+<input type="number" [(ngModel)]="carro.ano" />
+
+<button (click)="salvar()">Salvar</button> 
