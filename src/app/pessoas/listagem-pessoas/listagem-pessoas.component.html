@@ -7,7 +7,7 @@
         <th>Idade:</th>
     </tr>
 
-    <tr *ngFor="let pessoa of lista; let i = index">
+    <tr *ngFor="let pessoa of pessoas; let i = index">
         <td>
             {{pessoa.nome}}
         </td>
@@ -28,7 +28,7 @@
 	</div>
 	<div class="modal-body">
 		
-        <app-pessoasdetails (retorno)="addNaLista($event)" ></app-pessoasdetails>
+        <app-pessoasdetails></app-pessoasdetails>
             
 	</div>
 	<div class="modal-footer">

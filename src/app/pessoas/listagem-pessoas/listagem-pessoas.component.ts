@@ -8,11 +8,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap'
   styleUrls: ['./listagem-pessoas.component.scss']
 })
 
-
-
-
-
-export class ListagemPessoasComponent implements OnInit {
+export class ListagemPessoasComponent {
 
   modalService = inject(NgbModal);
   
@@ -30,15 +26,11 @@ export class ListagemPessoasComponent implements OnInit {
   ];
 
   constructor() { }
-
-  modalService = inject(NgbModal);
   
-  abrirModal(content) {
-    this.modalService.open(content, { size: 'lg' });
-    }
-
-  ngOnInit(): void {
+  abrirModal(abc: any){
+    this.modalService.open(abc, { size: 'lg' });
   }
+
 
   
 

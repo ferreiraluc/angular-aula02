@@ -13,7 +13,8 @@ import { ListagemLivrosComponent } from './livros/listagem-livros/listagem-livro
 import { LivrosdetailsComponent } from './livros/livrosdetails/livrosdetails.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { FormsModule } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PessoasdetailsComponent } from './pessoas/pessoasdetails/pessoasdetails.component';
 
 
 
@@ -21,22 +22,16 @@ import { ReactiveFormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     IndexComponent,
-    MenuSuperiorComponent,
-    ListagemPessoasComponent,
     HeaderComponent,
-    ListagemCarrosComponent,
-    CarrosdetailsComponent,
-    ListagemLivrosComponent,
-    LivrosdetailsComponent,
+    ListagemPessoasComponent,
     FooterComponent,
-  
+    PessoasdetailsComponent
   ],
-  
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
