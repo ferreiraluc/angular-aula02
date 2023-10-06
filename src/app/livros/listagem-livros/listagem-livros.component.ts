@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Livro } from '../../livros.model';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-listagem-livros',
@@ -7,6 +8,8 @@ import { Livro } from '../../livros.model';
   styleUrls: ['./listagem-livros.component.scss']
 })
 export class ListagemLivrosComponent {
+
+  modalService = inject(NgbModal);
   
   livros: Livro [] = [
     new Livro('O Senhor dos Anéis', 'J. R. R. Tolkien'),
@@ -18,5 +21,12 @@ export class ListagemLivrosComponent {
     
   }
 
+  abrirModal(abc: any){
+    this.modalService.open(abc, { size: 'lg' });
+  }
 
+  addNaLista(livro: Livro){
+    this.livros.push(livro);
+    this.modalService.dismissAll();
+  }
 }
