@@ -15,6 +15,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PessoasdetailsComponent } from './pessoas/pessoasdetails/pessoasdetails.component';
+import { LoginComponent } from './sistema/login/login.component';
 
 
 
@@ -30,7 +31,8 @@ import { PessoasdetailsComponent } from './pessoas/pessoasdetails/pessoasdetails
     LivrosdetailsComponent,
     MenuSuperiorComponent,
     ListagemCarrosComponent,
-    ListagemLivrosComponent
+    ListagemLivrosComponent,
+    LoginComponent
     
   ],
   imports: [

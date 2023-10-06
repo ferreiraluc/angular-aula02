@@ -1,6 +1,3 @@
-<p>pessoaslist works!</p>
-
-
 <table>
     <tr>
         <th>Nome:</th>
@@ -17,9 +14,7 @@
     </tr>
 </table>
 
-<button (click)="abrirModal(abc)" >Nova pessoa</button>
- 
-
+<button (click)="abrirModal(abc)">Nova pessoa</button>
 
 <ng-template #abc let-modal>
 	<div class="modal-header">
@@ -27,9 +22,7 @@
 		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
 	</div>
 	<div class="modal-body">
-		
-        <app-pessoasdetails (retorno)="addNaLista($event)" ></app-pessoasdetails>
-            
+        <app-pessoasdetails (retorno)="addNaLista($event)"></app-pessoasdetails>  
 	</div>
 	<div class="modal-footer">
 		<button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
