@@ -25,7 +25,13 @@ import { PessoasdetailsComponent } from './pessoas/pessoasdetails/pessoasdetails
     HeaderComponent,
     ListagemPessoasComponent,
     FooterComponent,
-    PessoasdetailsComponent
+    PessoasdetailsComponent,
+    CarrosdetailsComponent,
+    LivrosdetailsComponent,
+    MenuSuperiorComponent,
+    ListagemCarrosComponent,
+    ListagemLivrosComponent
+    
   ],
   imports: [
     BrowserModule,

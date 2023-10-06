@@ -1,5 +1,5 @@
 import { Component, OnInit, inject } from '@angular/core';
-import { Pessoa } from '../../pessoa.model';
+import { Pessoa } from '../pessoa';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap'
 
 @Component({
@@ -31,8 +31,11 @@ export class ListagemPessoasComponent {
     this.modalService.open(abc, { size: 'lg' });
   }
 
+  addNaLista(pessoa: Pessoa){
+    this.pessoas.push(pessoa);
+    this.modalService.dismissAll();
+  }
 
-  
 
 }
 

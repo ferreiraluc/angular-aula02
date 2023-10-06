@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Output, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Pessoa } from '../../pessoa.model';
+import { Pessoa } from '../pessoa';
+
 
 @Component({
   selector: 'app-pessoasdetails',
@@ -21,7 +22,6 @@ export class PessoasdetailsComponent {
 
 
   salvar(){
-    //banco de dados... back
     this.retorno.emit(this.pessoa);
   }
 
